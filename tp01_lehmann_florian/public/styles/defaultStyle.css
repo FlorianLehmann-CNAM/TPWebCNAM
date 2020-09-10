@@ -1,0 +1,11 @@
+form {
+  margin: 50px !important;
+}
+form input:invalid {
+  border: red solid 2px;
+  border-radius: 3px;
+  outline: none;
+}
+form label {
+  display: unset !important;
+}

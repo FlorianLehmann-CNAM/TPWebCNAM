@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles/defaultStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>TP1</title>
+
+</head>
+<body>
+    <section class="container">
+        <form onsubmit="return validation()" id="tpForm">
+            <legend>Formulaire à remplir</legend>
+
+            <section class="user-form">
+            <div class="form-group">
+                <label>
+                    Nom
+                    <input type="text" class="form-control" placeholder="Entrez votre nom" pattern="[a-zA-Z]*"
+                    oninvalid="this.setCustomValidity('Le nom est invalide.')"
+                    oninput="this.setCustomValidity('')"  required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Prénom
+                    <input type="text" class="form-control" placeholder="Entrez votre prénom" pattern="[a-zA-Z]*"
+                    oninvalid="this.setCustomValidity('Le prénom est invalide.')"
+                    oninput="this.setCustomValidity('')" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Adresse
+                    <input type="text" class="form-control" placeholder="Entrez votre adresse" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Code postal
+                    <input type="text" class="form-control" placeholder="Entrez votre code postal" pattern="[0-9]{5}"
+                    oninvalid="this.setCustomValidity('Le code postal est invalide.')"
+                    oninput="this.setCustomValidity('')" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                     Ville
+                    <input type="text" class="form-control" placeholder="Entrez votre ville" pattern="[a-zA-Z]*"
+                    oninvalid="this.setCustomValidity('La ville est invalide.')"
+                    oninput="this.setCustomValidity('')" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Téléphone Mobile
+                    <input type="tel" class="form-control" placeholder="Entrez votre numéro de téléphone mobile" pattern="[0-9]{10}"
+                    oninvalid="this.setCustomValidity('Le numéro de téléphone est invalide.')"
+                    oninput="this.setCustomValidity('')" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Adresse E-mail
+                    <input type="email" class="form-control" placeholder="Entrez votre adresse e-mail" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Civilité
+                    <select class="form-control">
+                        <option value>Monsieur</option>
+                        <option value>Madame</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Identifiant
+                    <input type="text" class="form-control" placeholder="Entrez votre identifiant" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Mot de passe
+                    <input type="password"  id="pass" class="form-control" required>
+                </label>
+            </div>
+            <div class="form-group" >
+                <label>
+                    Confirmation du mot de passe
+                    <input type="password" id="passConfirm" class="form-control" required>
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer le formulaire</button>
+            </section>
+        </form>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+
+</html>
